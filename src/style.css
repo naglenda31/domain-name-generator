@@ -1,12 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  color: #007bff;
-  font-family: "Nunito", sans-serif;
-}
-
-h2 {
-  text-decoration: underline 3px;
+  color: white;
+  font-family: "Architects Daughter", cursive;
+  background: #dee2e6;
 }
 
 .domain-name-list {
@@ -14,29 +11,30 @@ h2 {
   list-style: none;
 }
 .domain-name-list li {
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 0.75rem 1rem;
   counter-increment: my-awesome-counter;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 
 .domain-name-list li::before {
+  color: #117a8b;
   content: counter(my-awesome-counter);
   font-size: 20px;
   font-weight: bold;
   position: absolute;
   --size: 32px;
   left: calc(-1 * var(--size) - 0px);
-  line-height: var(--size);
   width: var(--size);
-  height: var(--size);
-  top: 0;
   background: white;
   border-radius: 50%;
-  text-align: center;
-  box-shadow: 5px 1px 0 #6c757d4a;
 }
 
 .alert-info {
-  color: #007bff;
+  color: white;
+  border: none;
+}
+
+.background {
+  background: #487077;
 }

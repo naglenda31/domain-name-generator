@@ -8,7 +8,7 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
-
+  let replaced = [];
   let domainList = [];
   let pronoun = ["the", "our"];
   let adj = ["great", "big", "awesome"];
@@ -23,10 +23,11 @@ window.onload = function() {
         }
       }
     }
-  }
-  let domainName = document.querySelector("#domain-list");
 
-  console.log(domainList);
+    console.log(domainList);
+  }
+
+  let domainName = document.querySelector("#domain-list");
 
   for (let i = 0; i < domainList.length; i++) {
     domainName.innerHTML += "<li>" + domainList[i] + "</li>";
